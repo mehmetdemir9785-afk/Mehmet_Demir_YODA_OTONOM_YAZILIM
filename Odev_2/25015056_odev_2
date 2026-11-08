@@ -1,14 +1,40 @@
-# Ödev 2 - Git ve GitHub
+Git ve GitHub
 
-Bu dosyada Git ve GitHub kullanarak
-öğrendiklerimi ve yaptığım uygulamaları
-açıklayacağım.
+Git bir projede yapılan değişiklikleri takip etmek için kullanılıyor. 
+Mesela kodda bir şeyi değiştirdikten sonra program bozulursa eski sürüme dönebiliriz. 
+GitHub ise bu projeleri internette saklayabildiğimiz ve başkalarıyla paylaşabildiğimiz bir platform.
+Git'in bilgisayarda da çalıştıyot GitHub'ın ise projeyi paylaşmak için kullanılıyor.
+Bu ödevde yaptıklarım
 
-## Git Nedir?
-Git, dosyalarımızdaki değişiklikleri
-takip eden bir sürüm kontrol sistemidir.
+Önce GitHub'da kendi adıma bir repository oluşturdum.
+Sonra clone işlemiyle bilgisayarıma indirdim.
 
-## GitHub Nedir?
-GitHub, Git projelerini çevrimiçi
-saklayabildiğimiz ve başkalarıyla
-paylaşabildiğimiz bir platformdur.
+Ana branch'in adı main.
+Ben odev_2 adında başka bir branch oluşturdum.
+Böylece ana projeyi değiştirmeden ayrı bir yerde çalışabildim.
+
+Bu branch'in içinde Odev_2 klasörünü ve git_notlari.md dosyasını oluşturdum. 
+Değişiklikleri commit ile kaydettim. 
+Daha sonra pull işlemiyle GitHub'da yaptığım değişiklikleri bilgisayarıma aldım.
+
+Son olarak pull request oluşturarak odev_2 branch'ini main ile birleştirdim.
+Buna merge deniyor.
+
+En son da Odev_1 klasörünü oluşturup geçen haftanın ödevini attım ve bu dosyayı düzenliyorum
+
+Öğrendiğim bazı kavramlar
+
+Commit yaptığımız değişiklikleri kaydetmek için kullanılıyor. Stage ise hangi değişikliklerin commit'e dahil edileceğini seçtiğimiz aşama.
+
+Push bilgisayarımızdaki değişiklikleri GitHub'a göndermek için kullanılıyor. Pull ise bunun tersi GitHub'daki değişiklikleri bilgisayarımıza alıyor.
+
+Branch açmak da kullanışlı geldi. Bir şeyi denemek için ana kodu değiştirmemiz gerekmiyor. Denediğimiz şey düzgün çalışırsa merge ile ana projeye ekleyebiliyoruz.
+
+Takım çalışmasında GitHub
+
+Geçen ödevde İHA takımlarının kullandığı yazılımları araştırmıştım. Bu takımlarda uçuş kontrolü, görüntü işleme ve hedef takibi gibi farklı işler var.
+
+Mesela bir kişi YOLO ile görüntü işleme üzerinde çalışırken başka biri uçuş kontrol yazılımını geliştirebilir. Herkes kendi branch'inde çalışırsa birbirlerinin kodlarını doğrudan değiştirmemiş olurlar.
+
+Daha sonra yapılan değişiklikler kontrol edilip ana projeyle birleştirilebilir. Ayrıca bir sorun çıktığında hangi değişiklikten kaynaklandığını bulmak da kolaylaşır.
+
